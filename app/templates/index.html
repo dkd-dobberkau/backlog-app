@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1 class="display-4">Welcome to Backlog App</h1>
+    <p class="lead">Manage your product backlog and sprints efficiently.</p>
+    <hr class="my-4">
+    <p>This application helps you organize your work items and track progress across sprints.</p>
+    <div class="row mt-4">
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Product Backlog</h5>
+                    <p class="card-text">View and manage your product backlog items.</p>
+                    <a href="{{ url_for('main.product_backlog') }}" class="btn btn-primary">Go to Product Backlog</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Sprints</h5>
+                    <p class="card-text">Manage your sprints and sprint backlogs.</p>
+                    <a href="{{ url_for('main.sprints') }}" class="btn btn-primary">Go to Sprints</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
