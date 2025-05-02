@@ -52,6 +52,12 @@ A simple web application for managing product and sprint backlogs for agile deve
    ```
 4. Access the application at http://127.0.0.1:5001
 
+## Screenshots
+
+![Product Backlog](Product_Backlog.png)
+
+![Sprints](Sprints.png)
+
 ## Project Structure
 
 - `app/` - Main application package
