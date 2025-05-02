@@ -21,6 +21,8 @@ A simple web application for managing product and sprint backlogs for agile deve
 
 ## Installation
 
+### Standard Installation
+
 1. Clone this repository
 2. Create and activate a virtual environment:
    ```
@@ -36,6 +38,19 @@ A simple web application for managing product and sprint backlogs for agile deve
    python run.py
    ```
 5. Access the application at http://127.0.0.1:5001
+
+### Docker Installation
+
+1. Clone this repository
+2. Build the Docker image:
+   ```
+   docker build -t backlog-app .
+   ```
+3. Run the container:
+   ```
+   docker run -p 5001:5000 backlog-app
+   ```
+4. Access the application at http://127.0.0.1:5001
 
 ## Project Structure
 
